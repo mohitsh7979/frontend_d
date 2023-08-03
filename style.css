@@ -1,0 +1,131 @@
+.container{
+
+    height: 100vh;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.box{
+
+    height: 70%;
+    width: 30%;
+    border: 2px solid black;
+}
+
+#inner-box-1{
+
+    height: 70%;
+    border: 2px dashed red;
+}
+
+#inner-box-2{
+
+    height: 10%;
+    border: 2px dashed green;
+}
+
+#inner-box-3{
+
+    height: 18%;
+    border: 2px dashed yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-box{
+
+    border: 2px solid black;
+    height: 98%;
+    width: 70%;
+    margin: auto;
+}
+
+.logo{
+
+    height: 20%;
+    border: 2px dashed green;
+    text-align: center;
+}
+
+.input{
+
+    height: 50%;
+    border: 2px dashed red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+input{
+
+    padding: 10px;
+    outline: none;
+    margin-top: 1rem;
+    background-color:#fafafa;
+    border: 1px solid grey;
+    border-radius: 3px;
+   
+
+}
+
+input::placeholder{
+
+     letter-spacing: 5px;
+
+}
+
+input:focus{
+
+    /* border: 2px solid red; */
+}
+
+
+
+button{
+
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 1rem;
+    border: none;
+    border-radius:2px;
+    background-color: #4bb4f8;
+    color: white;
+   
+}
+
+button:hover{
+
+    /* background-color: yellow; */
+}
+
+.links{
+
+    height: 27%;
+    border: 2px dashed blue;
+}
+
+span{
+
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.or{
+
+    display: flex;
+    margin-top: 15px;
+}
+
+.or h1{
+
+    border-top: 2px solid black;
+    width: 50%;
+    position: relative;
+    bottom: 12px;    
+    
+}
