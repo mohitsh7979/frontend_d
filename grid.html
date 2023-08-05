@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 100vh;
+        border: 2px solid black;
+        display: grid;
+        /*  grid-template-columns: 2fr 1fr 1fr 2fr; */
+        /* grid-template-columns: repeat(5,auto);
+          grid-gap: 2rem; */
+        grid-template-rows: 1fr 3fr 1fr;
+      }
+
+      .box {
+        border: 2px solid black;
+      }
+
+      #box-1 {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-gap: 2rem;
+      }
+
+      .header-box {
+        height: 100%;
+        border: 2px dashed black;
+      }
+
+      #box-2 {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+      }
+
+      .inner-box {
+        height: 100%;
+        border: 2px dashed red;
+      }
+
+      #inner-box-2 {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 2rem;
+      }
+
+      .image-box {
+        height: 100%;
+        border: 2px dashed black;
+      }
+
+      @media (max-width: 1200px) {
+        #inner-box-2 {
+          display: grid;
+          grid-template-columns: repeat(1, auto);
+          grid-gap: 2rem;
+        }
+      }
+
+      @media (min-width: 1201px) and (max-width: 2000px) {
+        #inner-box-2 {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+          grid-gap: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box-1">
+        <div class="header-box"></div>
+        <div class="header-box"></div>
+        <div class="header-box"></div>
+        <div class="header-box"></div>
+      </div>
+      <div class="box" id="box-2">
+        <div class="inner-box"></div>
+        <div class="inner-box" id="inner-box-2">
+          <di class="image-box" id="image-box-1"></di>
+          <di class="image-box" id="image-box-2"></di>
+          <di class="image-box" id="image-box-3"></di>
+          <di class="image-box" id="image-box-4"></di>
+          <di class="image-box" id="image-box-5"></di>
+          <di class="image-box" id="image-box-6"></di>
+        </div>
+      </div>
+      <div class="box"></div>
+    </div>
+  </body>
+</html>
