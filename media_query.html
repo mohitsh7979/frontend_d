@@ -1,56 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        header{
+      header {
+        height: 200px;
+        background-color: yellow;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-            height: 200px;
-            background-color: yellow;
-           font-size: 20px;
-            
-            
+      h2 {
+        margin: 30px;
+        font-size: 30px;
+      }
+
+      @media (max-width: 500px) {
+        header {
+          background-color: pink;
+          height: 900px;
         }
 
-        h2{
-
-            margin: 30px;
-            font-size: 30px;
+        #b {
+          display: none;
         }
 
-     
+        #c {
+          display: none;
+        }
+      }
 
-        @media (max-width:500px){
-
-            header{
-
-                background-color: pink;
-                height: 900px;
-            }
-
-         
+      @media (min-width: 501px) and (max-width: 1300px) {
+        header {
+          background-color: red;
+          height: 500px;
         }
 
-        @media (min-width:501px) and (max-width:1300px){
-            
-            header{
-
-                background-color: red;
-                height: 500px;
-            }
-    
-        
+        #c {
+          display: none;
         }
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, corrupti. Nostrum eaque praesentium tenetur quia sit voluptates ipsa amet velit expedita alias iste inventore natus, sed iusto voluptatem error, modi odio excepturi in soluta, rem consequatur? Ipsam quidem deleniti ducimus iste esse placeat ex iusto ut dolore, ratione temporibus! Optio non autem facere rem? Harum maxime dolore, numquam aut eius corporis reprehenderit, rerum enim vero aliquam adipisci esse dicta cum minus soluta impedit laboriosam mollitia amet molestiae fugiat maiores. Ipsum quae esse repellat molestias ratione aspernatur fugit obcaecati iusto fuga doloribus eum aut debitis, natus voluptate nihil nostrum error itaque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quis recusandae voluptas cumque error quisquam eius vitae voluptatibus vel optio harum nesciunt, corrupti voluptatem laudantium? Harum amet ea iste commodi, aliquid praesentium deleniti optio ducimus necessitatibus quo culpa facere et dicta quam quisquam eligendi voluptatum, consectetur deserunt nisi! Corporis sed perspiciatis distinctio! Suscipit officia amet saepe laborum reiciendis officiis repudiandae tempore non placeat repellat accusamus voluptatibus quod obcaecati nam, pariatur est maiores ducimus iusto dolorem error vitae assumenda tenetur. Ipsa ratione cupiditate error, autem perferendis totam inventore laudantium hic ipsam blanditiis eveniet corporis incidunt qui numquam? Cum soluta veniam beatae?
+      <h2 id="a">My name is Mohit <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg></h2>
+      <h2 id="b">My name is Rohit</h2>
+      <h2 id="c">My name is ankit</h2>
     </header>
-    
-</body>
+  </body>
 </html>
