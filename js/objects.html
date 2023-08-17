@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+
+
+        let obj = [
+        {
+
+            name : 'Mohit',
+            age : 50,
+            address : 'Jaipur'
+        },
+        {
+
+            name : 'Ankit',
+            age : 80,
+            address : 'Udaipur'
+        },
+        {
+
+            name : 'Aman',
+            age : 20,
+            address : 'Jodhpur'
+        },
+        {
+
+            name : 'Aman',
+            age : 10,
+            address : 'Jodhpur'
+        }
+        ]
+         
+       /* let ans = obj.filter((item)=>item.age>18);
+        let c = ans.map((item)=>item.name)
+        console.log */ 
+
+
+
+      /*  const myObj = {
+            name: "John",
+            age: 30,
+            cars: [
+              {name:"Ford", models:["Fiesta", "Focus", "Mustang"]},
+              {name:"BMW", models:["320", "X3", "X5"]},
+              {name:"Fiat", models:["500", "Panda"]}
+            ]
+          } 
+
+          console.log(myObj.cars[1].name,myObj.cars[1].models[1]) */ 
+
+
+
+    const person = {
+        fname:" John",
+        lname:" Doe",
+        age: 25,
+        salary : function(){
+    
+            return 50000;
+        },
+    
+        fullname :function(){
+    
+            return this.fname + " " + this.lname
+        }
+    
+    
+      }
+
+      console.log(person.salary())
+      console.log(person.fullname())
+       
+        
+       
+       
+
+    </script>
+    
+</body>
+</html>
