@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+       /* setInterval(function(){
+
+            document.write("Hello")
+        },3000) */ 
+
+      /*  let a = 10
+        let b = 30
+
+        console.log("add",a+b)
+
+
+        setTimeout(function(){
+            console.log("minus",a-b)
+        },2000) */ 
+
+        
+
+
+        function prom(complete){
+
+            return new Promise(function(resolve,reject){
+                  
+                console.log("data fetching....")
+
+                setTimeout(function(){
+
+                    if(complete){
+                      resolve("Successfully !!")
+                    }
+                    else{
+                      reject("Rejected !!!")
+                    }
+                },3000)
+            });
+          }
+
+        prom(true).then((item)=>{
+             console.log(item)
+        }).catch((error)=>{
+            console.log(error)
+        })
+
+        console.log("Mohit")
+    
+
+     
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        .div{
+
+            display: inline-block;
+            width: 24%;
+            height: 49%;
+            margin: 5px;
+        }
+
+        img{
+
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+  </head>
+  <body>
+    <script>
+      fetch("https://api.slingacademy.com/v1/sample-data/photos")
+        .then((item) => {
+          return item.json();
+        })
+        .then(function (data) {
+          console.log(data.ph);
+
+          for (let i of data.photos) {
+            console.log(i.url);
+            let a = document.createElement("div");
+            a.setAttribute("class", "div");
+            let im = document.createElement("img");
+            im.src = i.url;
+            a.append(im);
+            let desc = document.createElement("h5");
+            desc.innerHTML = i.title.slice(0,5);
+            a.append(desc);
+
+            let p = document.createElement("p")
+            p.innerHTML = i.description.slice(0,50)
+            a.append(p);
+            document.body.appendChild(a);
+            console.log(a);
+          }
+        });
+    </script>
+  </body>
+</html>
